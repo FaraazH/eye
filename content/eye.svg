@@ -1,0 +1,8 @@
+<svg class="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 672 561">
+  <circle class="background" cx="391.3" cy="280.3" r="280.3" fill="#000037"/>
+  <polygon class="lightBack" points="481 280 663 335 663 225 481 280" fill="#fb6e00" opacity=".3"/>
+  <polygon class="lightFront" points="0 280 0 368 481 280 0 193 0 280" fill="#fb6e00" opacity=".3"/>
+  <ellipse class="retina" cx="654.1" cy="280.3" rx="17.5" ry="84.7" fill="#53bfae" opacity=".6"/>
+  <ellipse class="lens" cx="193.8" cy="280.3" rx="33" ry="84.7" fill="#53bfae" opacity=".7"/>
+  <path class="cornea" d="M302 1223a295 295 0 0 1 47-159c-59 28-100 87-100 156 0 65 38 123 94 152a295 295 0 0 1-41-149Z" transform="translate(-191 -938)" fill="#53bfae" opacity=".8"/>
+</svg>

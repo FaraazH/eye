@@ -1,0 +1,7 @@
+<svg class="circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 93">
+  <path class="retinaCL" d="M563 1171a47 47 0 0 0 0 94Z" transform="translate(-516 -1171)" fill="#53bfae"/>
+  <path class="retinaCR" d="M562 1265a47 47 0 1 0 0-94Z" transform="translate(-516 -1171)" fill="#53bfae"/>
+  <circle class="blurC" cx="46.6" cy="46.6" r="46.6" fill="#53bfae"/>
+  <circle class="irisC" cx="46.6" cy="46.6" r="46.6" fill="#53bfae"/>
+  <circle class="pupilC" cx="46.6" cy="46.6" r="22.6" fill="#062800"/>
+</svg>

@@ -1,0 +1,188 @@
+//STRUCTURE
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    // background: gainsboro;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 15em;
+    height: 15em;
+    // background: cornsilk;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+//CIRCLE
+.circle {
+    position: absolute;
+    width: 5em;
+    display: none;
+}
+
+.lensCircle {
+    fill: #53bfae;
+   
+}
+
+//TEXT
+.textContainer {
+    justify-content: start;
+}
+
+.text {
+    position: absolute;
+    display: none;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-family: helvetica;
+    font-weight: 400;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+p {
+    font-size: .8rem;
+    font-family: helvetica;
+    font-weight: 100;
+}
+
+//SLIDER
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    display: none;
+    width: 70%;
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+    opacity: .7;
+    overflow: visible;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    //THUMB
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 10%;
+        height: 4em;
+        background: url('/content/bulb.svg');
+        background-color: transparent;
+        color: transparent;
+        background-repeat: no-repeat;
+        outline: none;
+        overflow: visible;
+        border: none;
+        margin-top: -3em;
+        cursor: pointer;
+      
+    }
+
+    &::-moz-range-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 1.5em;
+        height: 4em;
+        background: url('/content/bulb.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        margin-top: -3em;
+        cursor: pointer;
+        outline: none;
+        overflow: visible;
+    }
+
+    //TRACK
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px;
+        cursor: pointer;
+        background: gainsboro;
+
+        &:focus {
+             background: gainsboro;
+        }
+    }
+
+    &::-moz-range-track {
+        width: 100%;
+        height: 2px;
+        cursor: pointer;
+        background: gainsboro;
+    }
+
+}
+
+//EFFECTS
+.visible {
+    display: block;
+}
+
+.button:hover {
+    // fill: coral;
+    fill: #07fdd4;
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: 30%;
+    transition: .5s;
+}
+
+.slow {
+    transition: .5s;
+}
+
+.brightness {
+    fill: #07fdd4;
+}
+
+.lightness {
+    fill:#ffc400;
+}
+
+
+

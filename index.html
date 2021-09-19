@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye</title>
+    <link rel="stylesheet" href="css/eye.css">
+</head>
+
+<body>
+
+   <!--MAIN-->
+    <div class="main"> 
+        
+        <!--EYE-->
+        <div class="container eyeContainer">
+
+            <svg class="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 672 561">
+                <circle class="background" cx="391.3" cy="280.3" r="280.3" fill="#000037"/>
+                <polygon class="lightBack light" points="663,335 663,225 481,280" fill="#fb6e00" opacity=".3"/>
+                <polygon class="lightFront light" points="0,368 0,193 481,280" fill="#fb6e00" opacity=".3"/>
+                <ellipse class="retina button" cx="654.1" cy="280.3" rx="17.5" ry="84.7" fill="#53bfae" opacity=".6"/>
+                <ellipse class="lens button" cx="193.8" cy="280.3" rx="33" ry="84.7" fill="#53bfae" opacity=".7"/>
+                <path class="cornea button" d="M302 1223a295 295 0 0 1 47-159c-59 28-100 87-100 156 0 65 38 123 94 152a295 295 0 0 1-41-149Z" transform="translate(-191 -938)" fill="#53bfae" opacity=".8"/>
+            </svg>
+    
+        </div>
+
+        <!--CIRCLES-->
+        <div class="container circleContainer">
+
+            <svg class="circle retinaSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <path class="retinaCircleR" d="M562 1265a47 47 0 1 0 0-94Z" transform="translate(-516 -1171)" fill="#53bfae"/>
+                <path class="retinaCircleL" d="M563 1171a47 47 0 0 0 0 94Z" transform="translate(-516 -1171)" fill="#53bfae"/>
+            </svg>
+            
+            <svg class="circle lensSVG" xmlns="http://www.w3.org/2000/svg" viewBox="-25 -25 150 150">
+                <circle class="lensCircle" cx="46.6" cy="46.6" r="46.6"/>
+            </svg>
+
+            <svg class="circle corneaSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <circle class="irisCircle" cx="46.6" cy="46.6" r="46.6" fill="#53bfae"/>
+                <circle class="pupilCircle" cx="46.6" cy="46.6" r="22.6" fill="#062800"/>
+            </svg>
+
+        </div>
+
+        <!--TEXT-->
+        <div class="container textContainer">
+
+            <div class="text corneaText">
+                <h1>Cornea</h1>
+                <p>
+                Reflected light enters the human eye through the cornea,
+                the outermost part of the eye. <br><br>
+                The cornea refracts light towards the pupil, 
+                which controls the amount of light that reaches the lens.
+                 </p>
+            </div>
+
+            <div class="text lensText">
+                <h1>Lens</h1>
+                <p>
+                The lens focuses light onto the retina. <br>
+                The size of the pupil affects the focal point. <br><br>
+                The focal point determines what is in focus. 
+                 </p>
+            </div>
+
+            <div class="text retinaText">
+                <h1>Retina</h1>
+                <p>
+                    The retina is a layer of tissue at the back of the eye,
+                    containing photoreceptors: cells which are responsive to light. <br>
+                    Rods and cones. <br><br>
+                    Rods are activated in low light situations - 110 million roads.
+                    Cones are stimulated by bright light - 6 million cones. <br><br>
+                    The fovea is a point in the middle of the retina where focused light produces the clearest image. 
+                </p>
+
+            </div>
+
+        </div>
+
+        <!--SLIDERS-->
+        <div class="container sliderContainer">
+
+            <input class="slider retinaSlider" type="range" min="0" max="1" value="0" step="0.000000000001">
+            <input class="slider lensSlider" type="range" min="0" max="1" value="0" step="0.000000000001">
+            <input class="slider corneaSlider" type="range" min="0" max="1" value="0" step="0.000000000001">
+
+        </div>
+
+    </div> <!--MAIN-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="js/eye.js"></script>    
+</body>
+</html>
